@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitops-by-argocd-deployment
+  labels:
+    app: gitops-by-argocd-app
+spec:
+  selector:
+    matchLabels:
+      app: gitops-by-argocd-app
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: gitops-by-argocd-app
+    spec:
+      containers:
+        - name: gitops-by-argocd
+          image: docker.io/13640225/gitops-by-argocd:1.0
+          ports:
+            - containerPort: 8686

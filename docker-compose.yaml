@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  gitops-by-argocd:
+    container_name: gitops-by-argocd
+    build: .
+    platform: linux/x86_64
+    image: docker.io/13640225/gitops-by-argocd:1.0
+    ports:
+      - 8686:8686
