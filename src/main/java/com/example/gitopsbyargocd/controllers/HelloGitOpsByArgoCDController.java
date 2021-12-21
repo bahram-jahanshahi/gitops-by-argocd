@@ -11,6 +11,6 @@ public class HelloGitOpsByArgoCDController {
 
     @GetMapping("/argocd")
     public ResponseEntity<String> hello() {
-        return ResponseEntity.ok("Hello GitOps By ArgoCD!");
+        return ResponseEntity.ok("Hello GitOps By ArgoCD! Version 1.1");
     }
 }
