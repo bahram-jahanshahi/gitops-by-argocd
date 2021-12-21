@@ -14,7 +14,7 @@ For instance in this case study, all the deployment configurations should be in 
 
 ### Setup Argo CD in Kubernetes
 Follow this [getting started](https://argo-cd.readthedocs.io/en/stable/getting_started/) document to install Argo CD.  
-####Install Argo CD
+#### Install Argo CD
 ```shell
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
