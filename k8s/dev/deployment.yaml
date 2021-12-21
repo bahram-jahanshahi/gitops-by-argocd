@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: gitops-by-argocd
-          image: docker.io/13640225/gitops-by-argocd:1.0
+          image: docker.io/13640225/gitops-by-argocd:1.1
           ports:
             - containerPort: 8686
